@@ -18,3 +18,5 @@ angular.module("Dashboard").controller("ChartLineCtrl", ['$scope', '$timeout', f
             ];
         }, 3000);
     }]);
+
+console.log(Chart.defaults.global.colours);
