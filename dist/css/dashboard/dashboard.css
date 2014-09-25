@@ -495,3 +495,7 @@ hr {
   background-color: #c0c8c9;
   background-image: -webkit-linear-gradient(0deg, #ffffff, #c0c8c9, #ffffff);
 }
+.chart-line {
+  padding: 15px;
+  background-color: #fff;
+}
