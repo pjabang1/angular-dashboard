@@ -1,0 +1,31 @@
+{
+  "name": "angular-dashboard",
+  "version": "0.0.2",
+  "homepage": "https://github.com/pjabang1/angular-dashboard",
+  "authors": [
+    "Pa Essa Jabang <pjabang@gmail.com>"
+  ],
+  "description": "AngularJS + Bootstrap + Chart.js Responsive Dashboard",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.20",
+    "angular-cookies": "~1.2.21",
+    "angular-bootstrap": "~0.11.0",
+    "angular-ui-router": "^0.2.10",
+    "bootstrap": "~3.2.0",
+    "font-awesome": "~4.1.0",
+    "angular-chart.js": "~0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pjabang1/angular-dashboard.git"
+  }
+}
