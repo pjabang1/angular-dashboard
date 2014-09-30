@@ -24,7 +24,8 @@
     "font-awesome": "~4.1.0",
     "angular-chart.js": "~0.1.0",
     "d3": "~3.4.11",
-    "topojson": "~1.6.18"
+    "topojson": "~1.6.18",
+	"ionrangeslider": "~1.9.3"
   },
   "repository": {
     "type": "git",
