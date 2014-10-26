@@ -1,0 +1,13 @@
+CountryName,CapitalName,CapitalLatitude,CapitalLongitude,CountryCode,ContinentName,Percent
+Brazil,Brasilia,-15.783333333333333,-47.916667,BR,South America,0.1
+Colombia,Bogota,4.6,-74.083333,CO,South America,0.5
+Egypt,Cairo,30.05,31.250000,EG,Africa,15
+France,Paris,48.86666666666667,2.333333,FR,Europe,0.5
+Iraq,Baghdad,33.333333333333336,44.400000,IQ,Asia,0.8
+South Korea,Seoul,37.55,126.983333,KR,Asia,0.9
+Kosovo,Pristina,42.666666666666664,21.166667,KO,Europe,0.9
+Mexico,Mexico City,19.433333333333334,-99.133333,MX,Central America,0.2
+Nepal,Kathmandu,27.716666666666665,85.316667,NP,Asia,0.3
+Portugal,Lisbon,38.71666666666667,-9.133333,PT,Europe,0.4
+United States,Washington DC,38.883333,-77.000000,US,Central America,0.35
+Uruguay,Montevideo,-34.85,-56.166667,UY,South America,0.2

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../favicon.ico">
+
+		<title>Pensions</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Condiment|Roboto:100,300,500' rel='stylesheet' type='text/css'>
+		<!-- build:less lib/bootstrap/css/bootstrap.css -->
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<!-- endbuild -->
+
+		<!-- build:css lib/font-awesome/css/font-awesome.css -->
+		<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css">
+		<!-- endbuild -->
+		<!-- build:less css/dashboard/snippet.css -->
+		<link rel="stylesheet" type="text/css" href="less/snippet/elements.less">
+		<link rel="stylesheet" type="text/css" href="less/snippet/variables.less">
+		<link rel="stylesheet" type="text/css" href="less/snippet/content.less">
+		<link rel="stylesheet" type="text/css" href="less/snippet/hero.less">
+		<link rel="stylesheet" type="text/css" href="less/snippet/nav.less">
+		<link rel="stylesheet" type="text/css" href="less/snippet/map.less">
+		<!-- endbuild -->
+
+		<!-- build:css lib/nvd3/nv.d3.min.css -->
+		<link rel="stylesheet" type="text/css" href="bower_components/nvd3/nv.d3.min.css">
+		<!-- endbuild -->
+
+		<!-- build:js lib/d3/d3.min.js -->
+		<script src="bower_components/d3/d3.min.js"></script>
+		<!-- endbuild -->
+		<!-- build:js lib/nvd3/nv.d3.min.js -->
+		<script src="bower_components/nvd3/nv.d3.min.js"></script>
+		<!-- endbuild -->
+
+		<!-- build:js lib/topojson/topojson.js -->
+		<script src="bower_components/topojson/topojson.js"></script>
+		<!-- endbuild -->
+
+		<!-- build:less lib/ionrangeslider/css/ion.rangeSlider.min.css -->
+		<link rel="stylesheet" type="text/css" href="bower_components/ionrangeslider/css/ion.rangeSlider.css">
+		<!-- endbuild -->
+		<link rel="stylesheet" type="text/css" href="bower_components/ionrangeslider/css/ion.rangeSlider.skinNice.css">
+		<!-- endbuild -->
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body id="snippet" class="Grid" ontouchstart="">
+
+		<div class="container">
+			<!--
+			<div class="masthead">
+				<h3 class="text-muted">Project name</h3>
+				<ul class="nav nav-justified">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Downloads</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			-->
+			<!-- Jumbotron -->
+			<div class="row" >
+				<div class="col-lg-4">
+
+				</div>
+				<div class="col-lg-8" id="container">
+
+				</div>
+			</div>
+
+			<!-- Example row of columns -->
+			<div class="row">
+				<div class="col-lg-4 pension-chart" id="sector-donut">
+					<svg></svg>
+				</div>
+				<div class="col-lg-8">
+					<table class="table table-striped">
+
+						<tbody>
+							<tr>
+								<td>
+									<p class="text-right">Pension Fund 1</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+										Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+										dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+										Aliquam in felis sit amet augue.</p>
+									<ul class="list-inline list-unstyled pull-right">
+										<li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
+										<li>|</li>
+										<span><i class="glyphicon glyphicon-comment"></i> 2 comments</span>
+										<li>|</li>
+										<li>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star-empty"></span>
+										</li>
+										<li>|</li>
+										<li>
+											<!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+											<span><i class="fa fa-facebook-square"></i></span>
+											<span><i class="fa fa-twitter-square"></i></span>
+											<span><i class="fa fa-google-plus-square"></i></span>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="text-right">Pension Fund 1</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+										Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+										dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+										Aliquam in felis sit amet augue.</p>
+									<ul class="list-inline list-unstyled pull-right">
+										<li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
+										<li>|</li>
+										<span><i class="glyphicon glyphicon-comment"></i> 2 comments</span>
+										<li>|</li>
+										<li>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star-empty"></span>
+										</li>
+										<li>|</li>
+										<li>
+											<!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+											<span><i class="fa fa-facebook-square"></i></span>
+											<span><i class="fa fa-twitter-square"></i></span>
+											<span><i class="fa fa-google-plus-square"></i></span>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="text-right">Pension Fund 1</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+										Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+										dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+										Aliquam in felis sit amet augue.</p>
+									<ul class="list-inline list-unstyled pull-right">
+										<li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
+										<li>|</li>
+										<span><i class="glyphicon glyphicon-comment"></i> 2 comments</span>
+										<li>|</li>
+										<li>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star-empty"></span>
+										</li>
+										<li>|</li>
+										<li>
+											<!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+											<span><i class="fa fa-facebook-square"></i></span>
+											<span><i class="fa fa-twitter-square"></i></span>
+											<span><i class="fa fa-google-plus-square"></i></span>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="text-right">Pension Fund 1</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+										Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+										dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+										Aliquam in felis sit amet augue.</p>
+									<ul class="list-inline list-unstyled pull-right">
+										<li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
+										<li>|</li>
+										<span><i class="glyphicon glyphicon-comment"></i> 2 comments</span>
+										<li>|</li>
+										<li>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star"></span>
+											<span class="glyphicon glyphicon-star-empty"></span>
+										</li>
+										<li>|</li>
+										<li>
+											<!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+											<span><i class="fa fa-facebook-square"></i></span>
+											<span><i class="fa fa-twitter-square"></i></span>
+											<span><i class="fa fa-google-plus-square"></i></span>
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+
+			</div>
+
+			<!-- Site footer -->
+			<div class="footer">
+				<p>&copy; Company 2014</p>
+			</div>
+
+		</div> <!-- /container -->
+
+
+
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<!-- build:js lib/jquery/jquery.min.js -->
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<!-- endbuild -->
+		<!-- build:js lib/ionrangeslider/js/ion.rangeSlider.min.js -->
+		<script src="bower_components/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+		<!-- endbuild -->
+
+
+		<!-- build:json data/world-topo-min.json -->
+		<script src="data/world-topo-min.json"></script>
+		<!-- endbuild -->
+		<!-- build:css data/country-capitals.csv -->
+		<script src="data/country-capitals.csv"></script>
+		<!-- endbuild -->
+		<!-- build:js js/website/map.min.js -->
+		<script src="js/website/map.js"></script>
+		<!-- endbuild -->
+
+
+		<script>
+			var myColors = ["#2ecc71", "#3498db", "#e67e22", "#9b59b6", "#34495e", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"];
+			d3.scale.myColors = function() {
+				return d3.scale.ordinal().range(myColors);
+			};
+
+			//Donut chart example
+			nv.addGraph(function() {
+				var chart = nv.models.pieChart()
+						.x(function(d) {
+							return d.label
+						})
+						.y(function(d) {
+							return d.value
+						})
+						.showLabels(true)     //Display pie labels
+						.labelThreshold(.05)  //Configure the minimum slice size for labels to show up
+						.labelType("percent") //Configure what type of data to show in the label. Can be "key", "value" or "percent"
+						.donut(true)          //Turn on Donut mode. Makes pie chart look tasty!
+						.donutRatio(0.35)     //Configure how big you want the donut hole size to be.
+						.showLabels(true).color(d3.scale.myColors().range());
+				;
+
+				d3.select("#sector-donut svg")
+						.datum(exampleData())
+						.transition().duration(350)
+						.call(chart);
+
+				return chart;
+			});
+
+//Pie chart example data. Note how there is only a single array of key-value pairs.
+			function exampleData() {
+				return  [
+					{
+						"label": "Agriculture",
+						"value": 29.765957771107
+					},
+					{
+						"label": "Fashion",
+						"value": 32.807804682612
+					},
+					{
+						"label": "Technology",
+						"value": 196.45946739256
+					},
+					{
+						"label": "Retail",
+						"value": 15
+					},
+				];
+			}
+
+			$(document).ready(function() {
+
+
+
+			});
+		</script>
+	</body>
+</html>

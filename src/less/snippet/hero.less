@@ -1,0 +1,130 @@
+.border-radius(@radius) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.hero {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../../img/hero-image.jpg');
+	padding: 20px;
+	text-align: center;
+
+	a {
+		font-size: 12px;
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		text-decoration: none;
+		font-weight: 400;
+		line-height: 16px;
+	}
+	nav.ui.menu {
+		margin: 1rem 0;
+		background-color: transparent; 
+		padding: 20px 40px;
+		color: #fff;
+		font-weight: 400;
+		-webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1); 
+		border-radius: 0.0;
+	}
+	a:hover {
+		-webkit-transition: opacity 200ms linear,border 200ms linear,color 200ms linear,-webkit-box-shadow 200ms linear;
+		transition: opacity 200ms linear,border 200ms linear,color 200ms linear,box-shadow 200ms linear;
+		color: #777;
+	}
+	.irs-slider {
+		cursor: pointer;
+	}
+	.irs-from, .irs-to, .irs-single {
+		font-size: 14px;
+	}
+	.filter-container {
+
+
+		min-height: 200px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 75%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+
+		.top {
+			.border-radius(5px, 0, 0, 5px);
+			background-color: rgba(255,255,255,.9);
+			padding: 20px;
+			color: #aaa;
+		}
+		.bottom {
+			.border-radius(0, 5px, 5px, 0);
+			background-color: rgba(53,58,63,.91);
+			padding: 20px;
+			color: #fff;
+			font-size: 14px;
+			label {
+				color: #fff;
+			}
+		}
+
+	}
+
+	.h1 {
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 1.1;
+		letter-spacing: 1px;
+		display: block;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		margin-bottom: 46px;
+	}
+
+	.h1 .sub-text {
+		margin: 0 auto;
+		color: #fff;
+		opacity: .8;
+		font-size: 20px;
+		font-weight: 300;
+		letter-spacing: .05em;
+		text-transform: uppercase;
+	}
+	min-height: 100%;
+
+	.icon {
+		color: #6ECFF5;
+	}
+}
+
+button.submit {
+	position: absolute;
+	width: 210px;
+	top: 25px;
+	right: 20px;
+	max-width: 27.1%;
+	padding: 10px;
+}
+.hero-button-with-arrow:hover:enabled {
+	background-color: #16996c;
+}
+.hero-button-with-arrow {
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+	padding: 10px 20px;
+	border: 0;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center!important;
+	letter-spacing: .04em;
+	width: 220px;
+	height: 66px;
+	font-size: 16px;
+	background-color: #1bb580;
+}
